@@ -17,8 +17,8 @@ Proyek ini adalah aplikasi sederhana untuk mengelola data penjualan menggunakan 
 - PHP >= 7.4
 - Composer
 - Node.js dan npm
-- Laravel 9.x
-- Database (MySQL, PostgreSQL, dll.)
+- Laravel 11
+- Database (Mysql)
 
 ## Instalasi
 
@@ -99,27 +99,3 @@ Aplikasi sekarang akan berjalan di `http://localhost:8000`.
 
 - **Laravel** - Framework backend
 - **jQuery** - Library JavaScript untuk manipulasi DOM dan AJAX
-- **Bootstrap** - (Opsional) Untuk styling antarmuka (belum termasuk dalam proyek ini)
-
-## Kode Contoh
-
-### Controller (`PenjualanController.php`)
-
-```php
-public function index()
-{
-    return response()->json(Penjualan::all());
-}
-
-public function store(Request $request)
-{
-    $penjualan = Penjualan::create([
-        'produk' => $request->produk,
-        'jumlah' => $request->jumlah,
-        'harga' => $request->harga,
-        'total' => $request->jumlah * $request->harga,
-    ]);
-    return response()->json($penjualan, 201);
-}
-
-// Tambahan fungsi untuk update dan delete di dalam controller
