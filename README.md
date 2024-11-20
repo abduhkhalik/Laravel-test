@@ -17,8 +17,8 @@ Proyek ini adalah aplikasi sederhana untuk mengelola data penjualan menggunakan 
 - PHP >= 7.4
 - Composer
 - Node.js dan npm
-- Laravel 9.x
-- Database (MySQL, PostgreSQL, dll.)
+- Laravel 11.x
+- Database (MySQL)
 
 ## Instalasi
 
@@ -121,5 +121,3 @@ public function store(Request $request)
     ]);
     return response()->json($penjualan, 201);
 }
-
-// Tambahan fungsi untuk update dan delete di dalam controller
