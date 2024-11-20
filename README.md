@@ -14,11 +14,11 @@ Proyek ini adalah aplikasi sederhana untuk mengelola data penjualan menggunakan 
 
 ## Persyaratan
 
-- PHP >= 7.4
+- PHP >= 8.2
 - Composer
 - Node.js dan npm
-- Laravel 9.x
-- Database (MySQL, PostgreSQL, dll.)
+- Laravel 11
+- Database (MySQL)
 
 ## Instalasi
 
@@ -74,7 +74,7 @@ Aplikasi sekarang akan berjalan di `http://localhost:8000`.
 
 - `routes/web.php`: Definisi route untuk aplikasi, termasuk endpoint CRUD.
 - `app/Http/Controllers/PenjualanController.php`: Controller untuk menangani logika bisnis CRUD penjualan.
-- `resources/views/penjualan.blade.php`: Tampilan utama untuk antarmuka CRUD.
+- `resources/views/welcome.blade.php`: Tampilan utama untuk antarmuka CRUD.
 - `public/js/app.js`: File JavaScript untuk AJAX dan jQuery.
   
 ## Penggunaan
@@ -99,7 +99,6 @@ Aplikasi sekarang akan berjalan di `http://localhost:8000`.
 
 - **Laravel** - Framework backend
 - **jQuery** - Library JavaScript untuk manipulasi DOM dan AJAX
-- **Bootstrap** - (Opsional) Untuk styling antarmuka (belum termasuk dalam proyek ini)
 
 ## Kode Contoh
 
